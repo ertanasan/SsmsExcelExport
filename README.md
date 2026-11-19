@@ -10,6 +10,16 @@ An SQL Server Management Studio 22 extension that exports **every result grid** 
 2. Choose **Tools > Export All Result Grids to Excel...** (also available from the query editor's right-click menu).
 3. Pick a file name. Sheets are named `Result 1`, `Result 2`, and so on.
 
+## Example
+
+Two result grids in SSMS:
+
+![Query with two result grids in SSMS](docs/ssms-results.png)
+
+The exported workbook, one sheet per grid:
+
+![Exported workbook with Result 1 and Result 2 sheets](docs/excel-output.png)
+
 ## How it works
 
 - Reads the grids already on screen through SSMS's brokered services (`IQueryEditorTabDataServiceBrokered`). The query is **not** re-run.
