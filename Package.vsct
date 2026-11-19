@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Commands package="guidPkg">
+    <Groups>
+      <Group guid="guidCmdSet" id="grpTools" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+      <Group guid="guidCmdSet" id="grpEditor" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+    </Groups>
+    <Buttons>
+      <Button guid="guidCmdSet" id="cmdExport" priority="0x0100" type="Button">
+        <Parent guid="guidCmdSet" id="grpTools"/>
+        <Strings><ButtonText>Export All Result Grids to Excel...</ButtonText></Strings>
+      </Button>
+      <Button guid="guidCmdSet" id="cmdExportCtx" priority="0x0100" type="Button">
+        <Parent guid="guidCmdSet" id="grpEditor"/>
+        <Strings><ButtonText>Export All Result Grids to Excel...</ButtonText></Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+  <Symbols>
+    <GuidSymbol name="guidPkg" value="{3b9f2c64-8a1d-4f57-b0e2-6d5a97c1e831}" />
+    <GuidSymbol name="guidCmdSet" value="{e4d7a5b0-2c93-4b18-8f6a-1a0c5d3e7f42}">
+      <IDSymbol name="grpTools" value="0x1000" />
+      <IDSymbol name="grpEditor" value="0x1001" />
+      <IDSymbol name="cmdExport" value="0x0100" />
+      <IDSymbol name="cmdExportCtx" value="0x0101" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
