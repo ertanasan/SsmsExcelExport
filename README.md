@@ -2,7 +2,7 @@
 
 An SQL Server Management Studio 22 extension that exports **every result grid** of the active query window into **one `.xlsx` file, one sheet per grid**.
 
-![Tools menu showing "Export All Result Grids to Excel..."](docs/menu.png)
+![Tools menu showing "Export All Result Grids to Excel..."](docs/menu-export-highlighted.png)
 
 ## Usage
 
